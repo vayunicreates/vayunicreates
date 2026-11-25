@@ -1,6 +1,139 @@
-<html>
-<style>
-   div{min-height:1em;}
-</style>
-<body>&lt;!DOCTYPE html&gt;<br/>&lt;html lang=&quot;en&quot;&gt;<br/>&lt;head&gt;<br/>  &lt;meta charset=&quot;UTF-8&quot; /&gt;<br/>  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;<br/>  &lt;title&gt;VAYUNI — Where Imagination Comes Alive&lt;/title&gt;<br/>  &lt;link href=&quot;https://googleapis.com&quot; rel=&quot;stylesheet&quot;&gt;<br/>  &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/><br/>  &lt;div class=&quot;ambient-glow glow-1&quot;&gt;&lt;/div&gt;<br/>  &lt;div class=&quot;ambient-glow glow-2&quot;&gt;&lt;/div&gt;<br/><br/>  &lt;header&gt;<br/>    &lt;a class=&quot;brand&quot; onclick=&quot;switchTab(&#39;all&#39;)&quot;&gt;<br/>      &lt;div class=&quot;brand-icon&quot;&gt;V&lt;/div&gt;<br/>      &lt;div class=&quot;brand-text&quot;&gt;<br/>        &lt;h1&gt;VAYUNI&lt;/h1&gt;<br/>        &lt;span&gt;Where Imagination Comes Alive.&lt;/span&gt;<br/>      &lt;/div&gt;<br/>    &lt;/a&gt;<br/><br/>    &lt;nav class=&quot;nav-pill&quot; id=&quot;navPill&quot;&gt;<br/>      &lt;button class=&quot;nav-item active&quot; data-tab=&quot;all&quot; onclick=&quot;switchTab(&#39;all&#39;)&quot;&gt;🏠 Home&lt;/button&gt;<br/>      &lt;button class=&quot;nav-item&quot; data-tab=&quot;quotes&quot; onclick=&quot;switchTab(&#39;quotes&#39;)&quot;&gt;❝ Quotes&lt;/button&gt;<br/>      &lt;button class=&quot;nav-item&quot; data-tab=&quot;science&quot; onclick=&quot;switchTab(&#39;science&#39;)&quot;&gt;⚗️ Science&lt;/button&gt;<br/>      &lt;button class=&quot;nav-item&quot; data-tab=&quot;discoveries&quot; onclick=&quot;switchTab(&#39;discoveries&#39;)&quot;&gt;💡 Discoveries &amp; Inventions&lt;/button&gt;<br/>      &lt;button class=&quot;nav-item&quot; data-tab=&quot;language&quot; onclick=&quot;switchTab(&#39;language&#39;)&quot;&gt;文A Did You Know &amp; Language&lt;/button&gt;<br/>      &lt;button class=&quot;nav-item&quot; data-tab=&quot;spiritual&quot; onclick=&quot;switchTab(&#39;spiritual&#39;)&quot;&gt;🪷 Spiritual&lt;/button&gt;<br/>      &lt;button class=&quot;nav-item&quot; data-tab=&quot;aivideos&quot; onclick=&quot;switchTab(&#39;aivideos&#39;)&quot;&gt;🎬 Fun AI Videos&lt;/button&gt;<br/>      &lt;div class=&quot;search-box&quot;&gt;<br/>        &lt;input type=&quot;text&quot; id=&quot;searchInput&quot; placeholder=&quot;Search stotras, facts...&quot; onkeyup=&quot;handleSearch()&quot; /&gt;<br/>      &lt;/div&gt;<br/>    &lt;/nav&gt;<br/>  &lt;/header&gt;<br/><br/>  &lt;section class=&quot;hero&quot;&gt;<br/>    &lt;div class=&quot;hero-badge&quot;&gt;✨ Unified Portal of Modern Science &amp; Ancient Indian Wisdom&lt;/div&gt;<br/>    &lt;h2 class=&quot;hero-title&quot;&gt;VAYUNI&lt;/h2&gt;<br/>    &lt;p class=&quot;hero-subtitle&quot;&gt;Where Imagination Comes Alive.&lt;/p&gt;<br/>    &lt;div class=&quot;hero-pillars&quot;&gt;<br/>      &lt;span&gt;Knowledge&lt;/span&gt;<br/>      &lt;span&gt;Discovery&lt;/span&gt;<br/>      &lt;span&gt;Inspiration&lt;/span&gt;<br/>      &lt;span&gt;Learning&lt;/span&gt;<br/>      &lt;span&gt;Spirituality&lt;/span&gt;<br/>      &lt;span&gt;AI Fun&lt;/span&gt;<br/>    &lt;/div&gt;<br/>  &lt;/section&gt;<br/><br/>  &lt;section class=&quot;cards-container&quot;&gt;<br/>    &lt;div class=&quot;portal-card card-quotes&quot; onclick=&quot;switchTab(&#39;quotes&#39;)&quot;&gt;<br/>      &lt;div&gt;<br/>        &lt;div class=&quot;card-icon&quot;&gt;📜&lt;/div&gt;<br/>        &lt;h3&gt;Quotes&lt;/h3&gt;<br/>        &lt;p&gt;Thoughts that Inspire &amp; Subhashitams&lt;/p&gt;<br/>      &lt;/div&gt;<br/>      &lt;span class=&quot;explore-btn&quot;&gt;Explore →&lt;/span&gt;<br/>    &lt;/div&gt;<br/><br/>    &lt;div class=&quot;portal-card card-science&quot; onclick=&quot;switchTab(&#39;science&#39;)&quot;&gt;<br/>      &lt;div&gt;<br/>        &lt;div class=&quot;card-icon&quot;&gt;⚛️&lt;/div&gt;<br/>        &lt;h3&gt;Science&lt;/h3&gt;<br/>        &lt;p&gt;The Why Behind Our World&lt;/p&gt;<br/>      &lt;/div&gt;<br/>      &lt;span class=&quot;explore-btn&quot;&gt;Explore →&lt;/span&gt;<br/>    &lt;/div&gt;<br/><br/>    &lt;div class=&quot;portal-card card-discoveries&quot; onclick=&quot;switchTab(&#39;discoveries&#39;)&quot;&gt;<br/>      &lt;div&gt;<br/>        &lt;div class=&quot;card-icon&quot;&gt;⚙️&lt;/div&gt;<br/>        &lt;h3&gt;Discoveries &amp; Inventions&lt;/h3&gt;<br/>        &lt;p&gt;Ideas that Changed the World&lt;/p&gt;<br/>      &lt;/div&gt;<br/>      &lt;span class=&quot;explore-btn&quot;&gt;Explore →&lt;/span&gt;<br/>    &lt;/div&gt;<br/><br/>    &lt;div class=&quot;portal-card card-language&quot; onclick=&quot;switchTab(&#39;language&#39;)&quot;&gt;<br/>      &lt;div&gt;<br/>        &lt;div class=&quot;card-icon&quot;&gt;🌐&lt;/div&gt;<br/>        &lt;h3&gt;Did You Know &amp; Learn a Language&lt;/h3&gt;<br/>        &lt;p&gt;Amazing Facts &amp; A New Language Journey&lt;/p&gt;<br/>      &lt;/div&gt;<br/>      &lt;span class=&quot;explore-btn&quot;&gt;Explore →&lt;/span&gt;<br/>    &lt;/div&gt;<br/><br/>    &lt;div class=&quot;portal-card card-spiritual&quot; onclick=&quot;switchTab(&#39;spiritual&#39;)&quot;&gt;<br/>      &lt;div&gt;<br/>        &lt;div class=&quot;card-icon&quot;&gt;🛕&lt;/div&gt;<br/>        &lt;h3&gt;Spiritual&lt;/h3&gt;<br/>        &lt;p&gt;Vedic Chants, Stotrams &amp; Panchangam&lt;/p&gt;<br/>      &lt;/div&gt;<br/>      &lt;span class=&quot;explore-btn&quot;&gt;Explore →&lt;/span&gt;<br/>    &lt;/div&gt;<br/><br/>    &lt;div class=&quot;portal-card card-aivideos&quot; onclick=&quot;switchTab(&#39;aivideos&#39;)&quot;&gt;<br/>      &lt;div&gt;<br/>        &lt;div class=&quot;card-icon&quot;&gt;🤖&lt;/div&gt;<br/>        &lt;h3&gt;Fun AI Videos&lt;/h3&gt;<br/>        &lt;p&gt;Creative, Fun &amp; Mind-Blowing Videos&lt;/p&gt;<br/>      &lt;/div&gt;<br/>      &lt;span class=&quot;explore-btn&quot;&gt;Explore →&lt;/span&gt;<br/>    &lt;/div&gt;<br/>  &lt;/section&gt;<br/><br/>  &lt;main class=&quot;workspace&quot; id=&quot;workspace&quot;&gt;<br/>    &lt;div class=&quot;workspace-header&quot;&gt;<br/>      &lt;h2 id=&quot;sectionTitle&quot;&gt;Featured Across Vayuni&lt;/h2&gt;<br/>      &lt;span style=&quot;font-size: 13px; color: var(--gold-light);&quot;&gt;Daily Panchangam: Kartika Masa • Shukla Paksha • Abhijit Muhurat 11:48 AM&lt;/span&gt;<br/>    &lt;/div&gt;<br/><br/>    &lt;div class=&quot;script-bar&quot; id=&quot;scriptBar&quot;&gt;<br/>      &lt;span style=&quot;font-size: 13px; color: var(--text-muted); align-self: center; margin-right: 6px;&quot;&gt;Stotram Script (Vignanam Mode):&lt;/span&gt;<br/>      &lt;button class=&quot;script-btn active&quot; onclick=&quot;setScript(&#39;english&#39;, this)&quot;&gt;English&lt;/button&gt;<br/>      &lt;button class=&quot;script-btn&quot; onclick=&quot;setScript(&#39;devanagari&#39;, this)&quot;&gt;देवनागरी (Hindi/Sanskrit)&lt;/button&gt;<br/>      &lt;button class=&quot;script-btn&quot; onclick=&quot;setScript(&#39;telugu&#39;, this)&quot;&gt;తెలుగు (Telugu)&lt;/button&gt;<br/>      &lt;button class=&quot;script-btn&quot; onclick=&quot;setScript(&#39;tamil&#39;, this)&quot;&gt;தமிழ் (Tamil)&lt;/button&gt;<br/>    &lt;/div&gt;<br/><br/>    &lt;div class=&quot;content-grid&quot; id=&quot;contentGrid&quot;&gt;&lt;/div&gt;<br/>  &lt;/main&gt;<br/><br/>  &lt;div class=&quot;modal-backdrop&quot; id=&quot;modalBackdrop&quot; onclick=&quot;closeModal()&quot;&gt;<br/>    &lt;div class=&quot;modal-box&quot; onclick=&quot;event.stopPropagation()&quot;&gt;<br/>      &lt;h3 id=&quot;modalTitle&quot;&gt;Title&lt;/h3&gt;<br/>      &lt;p id=&quot;modalBody&quot;&gt;Details&lt;/p&gt;<br/>      &lt;button class=&quot;close-btn&quot; onclick=&quot;closeModal()&quot;&gt;Close&lt;/button&gt;<br/>    &lt;/div&gt;<br/>  &lt;/div&gt;<br/><br/>  &lt;footer&gt;<br/>    © 2026 VAYUNI — Blending Curiosity, Innovation &amp; Sanatana Spiritual Literature.<br/>  &lt;/footer&gt;<br/><br/>  &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;<br/>&lt;/body&gt;<br/>&lt;/html&gt;<br/></body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VAYUNI - Where Imagination Comes Alive</title>
+  <link href="https://googleapis.com" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <header>
+    <a class="brand" onclick="switchTab('all')">
+      <div class="brand-icon">V</div>
+      <div class="brand-text">
+        <h1>VAYUNI</h1>
+        <span>Where Imagination Comes Alive.</span>
+      </div>
+    </a>
+
+    <nav class="nav-pill" id="navPill">
+      <button class="nav-item active" data-tab="all" onclick="switchTab('all')">Home</button>
+      <button class="nav-item" data-tab="quotes" onclick="switchTab('quotes')">Quotes</button>
+      <button class="nav-item" data-tab="science" onclick="switchTab('science')">Science</button>
+      <button class="nav-item" data-tab="discoveries" onclick="switchTab('discoveries')">Discoveries &amp; Inventions</button>
+      <button class="nav-item" data-tab="language" onclick="switchTab('language')">Did You Know &amp; Language</button>
+      <button class="nav-item" data-tab="spiritual" onclick="switchTab('spiritual')">Spiritual</button>
+      <button class="nav-item" data-tab="aivideos" onclick="switchTab('aivideos')">Fun AI Videos</button>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search stotras, facts..." onkeyup="handleSearch()" />
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-badge">Unified Portal of Modern Science &amp; Ancient Indian Wisdom</div>
+    <h2 class="hero-title">VAYUNI</h2>
+    <p class="hero-subtitle">Where Imagination Comes Alive.</p>
+    <div class="hero-pillars">
+      <span>Knowledge</span>
+      <span>Discovery</span>
+      <span>Inspiration</span>
+      <span>Learning</span>
+      <span>Spirituality</span>
+      <span>AI Fun</span>
+    </div>
+  </section>
+
+  <section class="cards-container">
+    <div class="portal-card card-quotes" onclick="switchTab('quotes')">
+      <div>
+        <div class="card-icon">&#128220;</div>
+        <h3>Quotes</h3>
+        <p>Thoughts that Inspire &amp; Subhashitams</p>
+      </div>
+      <span class="explore-btn">Explore &rarr;</span>
+    </div>
+
+    <div class="portal-card card-science" onclick="switchTab('science')">
+      <div>
+        <div class="card-icon">&#9883;</div>
+        <h3>Science</h3>
+        <p>The Why Behind Our World</p>
+      </div>
+      <span class="explore-btn">Explore &rarr;</span>
+    </div>
+
+    <div class="portal-card card-discoveries" onclick="switchTab('discoveries')">
+      <div>
+        <div class="card-icon">&#9881;</div>
+        <h3>Discoveries &amp; Inventions</h3>
+        <p>Ideas that Changed the World</p>
+      </div>
+      <span class="explore-btn">Explore &rarr;</span>
+    </div>
+
+    <div class="portal-card card-language" onclick="switchTab('language')">
+      <div>
+        <div class="card-icon">&#127760;</div>
+        <h3>Did You Know &amp; Learn a Language</h3>
+        <p>Amazing Facts &amp; A New Language Journey</p>
+      </div>
+      <span class="explore-btn">Explore &rarr;</span>
+    </div>
+
+    <div class="portal-card card-spiritual" onclick="switchTab('spiritual')">
+      <div>
+        <div class="card-icon">&#128725;</div>
+        <h3>Spiritual</h3>
+        <p>Vedic Chants, Stotrams &amp; Panchangam</p>
+      </div>
+      <span class="explore-btn">Explore &rarr;</span>
+    </div>
+
+    <div class="portal-card card-aivideos" onclick="switchTab('aivideos')">
+      <div>
+        <div class="card-icon">&#129302;</div>
+        <h3>Fun AI Videos</h3>
+        <p>Creative, Fun &amp; Mind-Blowing Videos</p>
+      </div>
+      <span class="explore-btn">Explore &rarr;</span>
+    </div>
+  </section>
+
+  <main class="workspace" id="workspace">
+    <div class="workspace-header">
+      <h2 id="sectionTitle">Featured Across Vayuni</h2>
+      <span style="font-size: 13px; color: var(--gold-light);">Daily Panchangam: Kartika Masa &bull; Shukla Paksha &bull; Abhijit Muhurat 11:48 AM</span>
+    </div>
+
+    <div class="script-bar" id="scriptBar">
+      <span style="font-size: 13px; color: var(--text-muted); align-self: center; margin-right: 6px;">Stotram Script (Vignanam Mode):</span>
+      <button class="script-btn active" onclick="setScript('english', this)">English</button>
+      <button class="script-btn" onclick="setScript('devanagari', this)">Devanagari</button>
+      <button class="script-btn" onclick="setScript('telugu', this)">Telugu</button>
+      <button class="script-btn" onclick="setScript('tamil', this)">Tamil</button>
+    </div>
+
+    <div class="content-grid" id="contentGrid"></div>
+  </main>
+
+  <div class="modal-backdrop" id="modalBackdrop" onclick="closeModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <h3 id="modalTitle">Title</h3>
+      <p id="modalBody">Details</p>
+      <button class="close-btn" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2026 VAYUNI &mdash; Blending Curiosity, Innovation &amp; Sanatana Spiritual Literature.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
